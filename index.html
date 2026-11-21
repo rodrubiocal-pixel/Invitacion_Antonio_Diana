@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#771126">
+  <title>Antonio &amp; Diana — Nos casamos</title>
+  <meta name="description" content="Antonio y Diana celebran su boda en mayo de 2027 en Guadalajara, Jalisco. Pronto compartiremos más detalles.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Antonio &amp; Diana — Nos casamos">
+  <meta property="og:description" content="Mayo de 2027 · Guadalajara, Jalisco. Pronto compartiremos más detalles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --berry: #771126;
+      --burgundy: #501012;
+      --rose: #C55C6F;
+      --blush: #EFB2BF;
+      --peach: #E7C6B6;
+      --sage: #A5A89A;
+      --dusty: #7D8A7C;
+      --ivory: #F6F1E9;
+      --surface: #F8E6E0;
+      --text: #501012;
+      --muted: #657365;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: var(--text);
+      background: var(--ivory);
+      scroll-behavior: smooth;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-size: 19px; text-align: center; }
+    section { max-width: 760px; margin: 0 auto; padding: 68px 24px; }
+    .hero {
+      max-width: none;
+      min-height: 100svh;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      color: var(--burgundy);
+      background: linear-gradient(160deg, var(--peach), var(--blush) 55%, var(--sage));
+    }
+    .invitation {
+      position: relative;
+      width: min(100%, 430px);
+      min-height: min(760px, calc(100svh - 48px));
+      padding: 72px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .invitation::before, .invitation::after { content: ''; position: absolute; pointer-events: none; }
+    .invitation::before { inset: 8px; border: 1px solid var(--ivory); }
+    .invitation::after { inset: 15px; border: 1px solid rgb(246 241 233 / 65%); }
+    .eyebrow { font-size: 14px; letter-spacing: .35em; text-transform: uppercase; }
+    h1, h2 { font-family: 'Great Vibes', 'Cormorant Garamond', cursive; font-weight: 400; }
+    h1 { margin: 20px 0 12px; color: var(--berry); font-size: clamp(58px, 14vw, 88px); line-height: 1.02; }
+    h2 { margin: 0 0 12px; color: var(--berry); font-size: clamp(38px, 9vw, 48px); }
+    .date { margin-top: 8px; font-size: 23px; letter-spacing: .12em; }
+    .location { margin: 8px 0 0; font-size: 18px; }
+    .ornament { margin: 12px 0 20px; color: var(--rose); letter-spacing: .45em; }
+    .button { display: inline-block; margin-top: 24px; padding: 12px 24px; border: 1px solid var(--berry); border-radius: 999px; background: var(--berry); color: var(--ivory); text-decoration: none; font-size: 17px; letter-spacing: .06em; }
+    .button:hover { background: var(--burgundy); }
+    p { line-height: 1.55; }
+    .alt { max-width: none; background: var(--surface); }
+    .alt > .inner { max-width: 760px; margin: 0 auto; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+    .card { padding: 22px; border: 1px solid var(--blush); border-radius: 16px; background: var(--ivory); }
+    .card h3 { margin: 0 0 8px; color: var(--berry); font-size: 24px; }
+    .card p { margin: 0; color: var(--muted); }
+    .palette { display: flex; justify-content: center; gap: 9px; margin-top: 22px; }
+    .palette span { width: 22px; height: 22px; border: 1px solid rgb(80 16 18 / 12%); border-radius: 50%; }
+    .note { color: var(--muted); font-size: 16px; }
+    footer { padding: 36px 24px 48px; color: var(--muted); font-size: 16px; }
+    @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="couple-names">
+      <div class="invitation">
+        <div class="eyebrow">Nos casamos</div>
+        <h1 id="couple-names">Antonio<br>&amp;<br>Diana</h1>
+        <div class="ornament" aria-hidden="true">✿ ❦ ✿</div>
+        <div class="date">MAYO · 2027</div>
+        <p class="location">Guadalajara, Jalisco</p>
+        <a class="button" href="#confirmar">Ver detalles</a>
+      </div>
+    </section>
+
+    <section id="historia">
+      <h2>Con la bendición de Dios y nuestras familias</h2>
+      <div class="ornament" aria-hidden="true">❦</div>
+      <p>Queremos compartir con ustedes uno de los días más felices de nuestra vida. Será un honor contar con su presencia para celebrar nuestro amor.</p>
+      <p class="note">Pronto compartiremos la fecha exacta.</p>
+    </section>
+
+    <section class="alt" id="detalles">
+      <div class="inner">
+        <h2>Detalles del gran día</h2>
+        <div class="ornament" aria-hidden="true">✿</div>
+        <div class="cards">
+          <article class="card"><h3>Ceremonia</h3><p>Templo y horario por confirmar</p></article>
+          <article class="card"><h3>Recepción</h3><p>Lugar y horario por confirmar</p></article>
+          <article class="card"><h3>Código de vestimenta</h3><p>Formal<br>Los tonos de nuestra paleta son bienvenidos</p></article>
+        </div>
+        <div class="palette" role="img" aria-label="Paleta de colores: vino, rosa, blush, durazno y verde salvia">
+          <span style="background:#771126"></span><span style="background:#C55C6F"></span><span style="background:#EFB2BF"></span><span style="background:#E7C6B6"></span><span style="background:#A5A89A"></span><span style="background:#7D8A7C"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="agradecimiento">
+      <h2>Gracias</h2>
+      <div class="ornament" aria-hidden="true">✿ ❦ ✿</div>
+      <p>A nuestros padres, por su amor, su ejemplo y su apoyo incondicional en cada paso de nuestra vida.</p>
+      <p>A nuestros padrinos, por acompañarnos y guiarnos en este camino. Su cariño y consejos son un regalo para nosotros.</p>
+      <div class="cards" style="margin-top:24px">
+        <article class="card"><h3>Padres de Antonio</h3><p>Inocencio Rubio<br>Lucía Calderón</p></article>
+        <article class="card"><h3>Padres de Diana</h3><p>Por confirmar</p></article>
+        <article class="card"><h3>Nuestros padrinos</h3><p>Por confirmar</p></article>
+      </div>
+    </section>
+
+    <section id="regalos">
+      <h2>Mesa de regalos</h2>
+      <div class="ornament" aria-hidden="true">❦</div>
+      <p>Su presencia es nuestro mejor regalo. Si desean tener un detalle con nosotros, compartiremos aquí la información de la mesa de regalos.</p>
+      <p class="note">Enlace de Liverpool por confirmar.</p>
+    </section>
+
+    <section class="alt" id="confirmar">
+      <div class="inner">
+        <h2>Confirma tu asistencia</h2>
+        <div class="ornament" aria-hidden="true">✿</div>
+        <p>Pronto compartiremos el número de WhatsApp y la fecha límite para confirmar tu asistencia.</p>
+        <p class="note">La confirmación todavía no está habilitada.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="ornament" aria-hidden="true">✿ ❦ ✿</div>
+    Antonio &amp; Diana · Mayo de 2027 · Guadalajara, Jalisco
+  </footer>
+</body>
+</html>
